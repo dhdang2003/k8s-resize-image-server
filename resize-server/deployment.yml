@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: imgproxy
   labels:
-    app.kubernetes.io/name: viblo-image-server-imgproxy
+    app.kubernetes.io/name: image-server-imgproxy
 spec:
   selector:
     matchLabels:

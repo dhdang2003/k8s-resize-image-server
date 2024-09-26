@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend
   labels:
-    app.kubernetes.io/name: viblo-image-server-frontend
+    app.kubernetes.io/name: image-server-frontend
 spec:
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ spec:
                 path: nginx.conf
       containers:
       - name: my-frontend
-        image: maitrungduc1410/viblo-image-server-frontend:latest
+        image: dhdang131103/image-server-frontend:latest
         ports:
         - containerPort: 80
           name: pod-http

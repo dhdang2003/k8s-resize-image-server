@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend
   labels:
-    app.kubernetes.io/name: viblo-image-server-backend
+    app.kubernetes.io/name: image-server-backend
 spec:
   selector:
     matchLabels:
@@ -21,7 +21,7 @@ spec:
             claimName: backend
       containers:
       - name: my-backend
-        image: maitrungduc1410/viblo-image-server-backend:latest
+        image: dhdang131103/image-server-backend:latest
         ports:
         - containerPort: 3000
           name: pod-http
